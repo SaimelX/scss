@@ -1,0 +1,119 @@
+/**GENERAL******************************************************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: white;
+  background-color: black; }
+
+a {
+  text-decoration: none;
+  color: var(--pink); }
+
+.grid {
+  display: grid;
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer";
+  grid-template-rows: 200px 400px 20px; }
+
+/*****************************GRADIENTES***************************************/
+:root {
+  --violet: rgb(161, 132, 240);
+  --pink: #d60087;
+  --turquoise: #2fdabd; }
+
+h1 {
+  background-image: linear-gradient(45deg, var(--violet), var(--turquoise));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; }
+
+h2 {
+  background-image: linear-gradient(45deg, var(--violet), var(--turquoise));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; }
+
+/*********************HOVERS*********************/
+h1 h2:hover {
+  font-size: 3.5rem; }
+
+.link__header a:hover {
+  font-size: 20px; }
+
+span:hover {
+  font-size: 20px; }
+
+img {
+  clip-path: circle(50%);
+  transition-property: clip-path;
+  transition-duration: 2s; }
+
+img:hover {
+  clip-path: circle(150%); }
+
+/***********************HEADER**************************/
+.header {
+  grid-area: header;
+  position: fixed;
+  padding: 20px;
+  height: 100px;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  place-content: center space-between;
+  align-items: center; }
+  .header h1 {
+    font-size: 3rem; }
+  .header .link__header {
+    display: flex;
+    align-items: right; }
+  .header .link__header div {
+    padding: 10px; }
+
+/*************************MAIN************************/
+.main__index {
+  grid-area: main;
+  margin-top: 30px;
+  height: 00px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 100px; }
+  .main__index .title__main {
+    font-size: 2rem;
+    bottom: 10px;
+    margin-left: 0; }
+  .main__index .main__texto {
+    padding: 30px;
+    }
+  .main__index h2 {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .main__index .main__imagen {
+    padding-top: 20px;
+    width: 100px;
+    height: 200px; }
+  .main__index img {
+    width: 500px;
+    height: 200px; }
+  .main__index .card {
+    position: absolute; }
+
+/*************************FOOTER************************/
+.footer {
+  grid-area: footer;
+  position: fixed;
+  padding: 20px;
+  height: 20px;
+  width: 100vw;
+  bottom: 10px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center; }

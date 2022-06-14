@@ -1,0 +1,59 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows: 200px 400px 20px;
+    
+}
+
+/*************************MAIN************************/
+.main__index{
+    grid-area: main;
+    margin-top: 30px;
+    
+    height: 00px;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap:100px;
+
+    .title__main{
+        font-size: 2rem;
+        bottom: 10px;
+        margin-left: 0;
+    }
+
+    .main__texto{
+        
+        padding: 30px;
+        color: var(--turquoise);
+    
+    }
+    h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
+    .main__imagen {
+        padding-top: 20px;
+        width:100px;
+        height:200px;
+       
+    
+    }
+
+    img{
+        width: 500px;
+        height: 200px;
+    }
+    
+    
+    .card{
+        position: absolute;
+    }
+
+    
+    
+}

@@ -1,0 +1,13 @@
+/*************************FOOTER************************/
+.footer{
+    grid-area: footer;
+    
+    position: fixed;
+    padding: 20px;
+    height: 20px;
+    width: 100vw;
+    bottom: 10px;
+    display: flex;
+    place-content: center space-between;
+    align-items: center;
+     }

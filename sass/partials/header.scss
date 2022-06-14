@@ -1,0 +1,30 @@
+/***********************HEADER**************************/
+.header{
+    grid-area: header;
+    position: fixed;
+     padding: 20px;
+     height:100px;
+     width: 100vw;
+     top: 0;
+     display: flex;
+     place-content: center space-between;
+     align-items: center;
+     
+     h1{
+        font-size: 3rem;
+    }
+    
+    .link__header {
+        display: flex;
+        
+        align-items: right;
+        
+    }
+    
+    .link__header div{
+        padding: 10px;
+        
+    }
+
+ 
+ }

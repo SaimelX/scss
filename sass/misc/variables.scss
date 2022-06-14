@@ -1,0 +1,23 @@
+:root{
+    --violet: rgb(161, 132, 240);
+    --pink: #d60087;
+    --turquoise: #2fdabd;
+}
+
+h1{
+    background-image:linear-gradient(45deg, var(--violet), var(--turquoise) ) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    -moz-text-fill-color: transparent ;
+}
+
+h2{
+    background-image:linear-gradient(45deg, var(--violet), var(--turquoise) ) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    -moz-text-fill-color: transparent ;
+}
