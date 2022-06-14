@@ -1,6 +1,15 @@
-/*MISC*/
-@import "sass/misc/normalize.scss";
-/*partials*/
+@import"/sass/misc/normalize.scss";
+@import "/sass/misc/variables.scss";
+@import "/sass/misc/animation";
+
+@import"/sass/partials/header.scss";
+
+@import"/sass/pages/home.scss";
+
+@import "/sass/partials/footer.scss";
+
+
+
 
 
 
